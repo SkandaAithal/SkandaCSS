@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+.para {
+  text-align: center;
+  margin-top: 10px;
+}
+.parent .image img {
+  width: 330px;
+  height: 300px;
+  margin: 25px;
+}
+.parent .content .head h3 {
+  margin-bottom: 10px;
+}
+.parent .content {
+  width: 55%;
+}
+
+.parent .content .seperate .list,
+.list2 {
+  height: 100px;
+
+  width: 250px;
+}
+.parent .content .seperate li {
+  margin: 6px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.parent .content .seperate span {
+  font-weight: bold;
+  padding-left: 15px;
+}

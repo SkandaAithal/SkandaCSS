@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+/* .pseudo h3:first-child {
+  color: blue;
+}
+.pseudo h3:last-child {
+  color: red;
+}
+.pseudo h3:nth-child(2) {
+  color: chartreuse;
+} */
+.pseudo h3:nth-child(even) {
+  color: brown;
+}
+.pseudo h3:nth-child(odd) {
+  color: red;
+}
+.pseudo h3:nth-last-child(2) {
+  color: yellow;
+}
+p::first-letter {
+  color: blue;
+}
+p::first-line {
+  color: green;
+}
+::selection {
+  background-color: brown;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+input::placeholder {
+  color: red;
+  font-family: cursive;
+}
+input:valid {
+  background-color: green;
+}
+input:invalid {
+  background-color: red;
+}

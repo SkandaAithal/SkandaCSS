@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in;
+}
+div {
+  height: 250px;
+  width: 200px;
+  overflow: hidden;
+  border: 3px solid rebeccapurple;
+  margin: 30px auto;
+}
+div:hover img {
+  /* transform: translate(20px, 40px); */
+  /* transform: rotate(360deg); */
+  transform: scale(1.2, 1.2);
+}
+div:hover {
+  border: 5px solid yellow;
+}

@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+section {
+  height: 230px;
+  width: 200px;
+  margin: 100px auto;
+  box-shadow: 0 0 40px 10px #a9aaaa64;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+section div {
+  width: 100%;
+  height: 100%;
+  color: #1ea29c;
+  padding-left: 10px;
+}
+section div i {
+  font-size: 50px;
+  position: relative;
+  top: 10px;
+}
+section div h4 {
+  margin: 15px 0px;
+}
+section div p {
+  font-size: 13px;
+}
+section .second {
+  background-color: #1ea29c;
+  height: 0;
+  width: 100%;
+  border-radius: 5px;
+  color: aliceblue;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s 0.05s ease-in-out;
+  z-index: -1;
+}
+section:hover .second {
+  height: 100%;
+}
+section:hover .first {
+  color: white;
+}

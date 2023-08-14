@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+
+/* header biegin */
+.head {
+  background-color: #3fbbc0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  padding-left: 70px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+.head span {
+  padding-right: 450px;
+}
+
+/* header end */
+
+/* navigation start */
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 10px;
+
+  text-transform: uppercase;
+  font-weight: 550;
+}
+nav {
+  padding: 18px;
+  padding-left: 75px;
+}
+nav .logo {
+  margin-right: 80px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+nav .appointment {
+  margin-left: 15px;
+  background-color: #3fbbc0;
+  font-size: 12px;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 3px;
+}
+a {
+  text-decoration: none;
+}
+nav ul a {
+  color: rgb(114, 112, 112);
+}
+nav ul a:hover {
+  color: #3fbbc0;
+}
+
+/* navigation ends */
+
+/* background starts */
+.bgimg {
+  background-image: url("https://bootstrapmade.com/demo/templates/Medicio/assets/img/slide/slide-2.jpg");
+  background-position: center bottom 60%;
+  padding: 40px;
+  height: 336px;
+  background-repeat: no-repeat;
+  background-size: 100% 170%;
+}
+.bgimg .bg-content {
+  margin: 47px 17px;
+  background-color: rgba(255, 255, 255, 0.913);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  height: 200px;
+  border-top: 3px solid #3fbbc0;
+}
+.bgimg .bg-content h2 {
+  margin-bottom: 18px;
+  font-size: 27px;
+}
+.bgimg .bg-content p {
+  font-size: 12px;
+  padding: 5px 15px;
+  margin-bottom: 30px;
+  color: rgba(79, 74, 74, 0.728);
+}
+.bgimg .bg-content a {
+  color: white;
+  background-color: #3fbbc0;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 10px 23px;
+  word-spacing: 3px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}

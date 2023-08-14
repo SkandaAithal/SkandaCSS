@@ -1,0 +1,25 @@
+/* child selector */
+div div > a {
+  color: red;
+}
+
+div p > a {
+  color: yellow;
+}
+/*class selector  */
+.a {
+  color: blueviolet;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.b {
+  font-style: italic;
+}
+/* sibling selector*/
+
+/* div.z + h1 {
+  color: red;
+} */
+
+div.z ~ h1 {
+  color: aqua;
+}

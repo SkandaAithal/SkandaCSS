@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+.team-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.team-head h3 {
+  color: #c2b7b1;
+  font-family: "Raleway", sans-serif;
+}
+.team-head h1 {
+  font-family: "Raleway", sans-serif;
+  color: #4e4039;
+  margin: 10px 0;
+}
+.team-head div {
+  height: 2px;
+  width: 50px;
+  background-color: #ef7f4d;
+  margin-top: 5px;
+}
+
+/* card of 4 */
+
+.cards-of-4 {
+  width: 100%;
+  height: 314px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .card-content {
+  width: 100%;
+  height: 0%;
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+  padding-right: 23px;
+  position: absolute;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 56px;
+}
+.card .card-content h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  /* padding-right: 8px; */
+}
+.card .card-content p {
+  font-style: italic;
+  font-size: 11px;
+  margin-top: 3px;
+}
+.card .icons {
+  height: 100%;
+  width: 20%;
+  padding-top: 9px;
+  background: rgba(78, 64, 57, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  translate: -40px 0;
+}
+.card .icons i {
+  font-size: 20px;
+  color: white;
+  padding: 6px;
+  margin-bottom: 5px;
+  translate: 5px 0;
+}
+.card .bgcolor {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(74, 46, 33, 0), rgb(69, 47, 37));
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+  opacity: 0;
+  /* use opacity to give this effect */
+}
+.card:hover .card-content {
+  color: white;
+  height: 30%;
+  z-index: 1;
+}
+.card:hover .icons {
+  translate: 0 0;
+  z-index: 1;
+}
+.card:hover .bgcolor {
+  z-index: 0;
+  opacity: 1;
+}
+.card .icons i:hover {
+  color: #ef7f4d;
+}

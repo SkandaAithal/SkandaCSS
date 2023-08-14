@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.img {
+  margin: 100px auto;
+  height: 400px;
+  width: 300px;
+  /* text-align: center; */
+  color: aliceblue;
+
+  background-image: linear-gradient(rgba(243, 11, 127, 0.336), rgb(12, 12, 83)),
+    url("./fashioncss.jpeg");
+  background-position: center center;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+}
+.img h4 {
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.img hr {
+  width: 32px;
+  margin-left: 30px;
+}
+.img p {
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+  font-family: cursive;
+}
+.hover:hover {
+  box-shadow: 0 0 15px 10px rgba(137, 43, 226, 0.596);
+  outline: 5px solid white;
+  border-radius: 13px;
+}

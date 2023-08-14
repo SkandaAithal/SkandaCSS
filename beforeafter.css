@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+.parent {
+  height: 215px;
+  width: 285px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+}
+.parent img {
+  height: 100%;
+  width: 100%;
+}
+.parent .cover {
+  width: 85%;
+  height: 85%;
+  background-color: #4232749e;
+  position: absolute;
+  top: 16px;
+  right: 21.5px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.parent .content p {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.parent .content i {
+  font-size: 35px;
+}
+
+.parent .cover::before {
+  content: "";
+  height: 40px;
+  width: 50px;
+  display: block;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  top: 13px;
+  position: relative;
+  left: 13px;
+}
+.parent .cover::after {
+  content: "";
+  height: 40px;
+  display: block;
+  width: 50px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  position: relative;
+  bottom: -85px;
+  right: -175px;
+}
+.parent .content {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30px;
+  position: absolute;
+  top: 63px;
+  right: 93px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.parent:hover .cover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.parent:hover .content {
+  opacity: 1;
+}

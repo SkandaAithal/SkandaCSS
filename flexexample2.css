@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+section {
+  margin: 50px auto;
+  width: 900px;
+  height: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+}
+section div {
+  margin: 9px;
+  border: 2px solid rgba(128, 128, 128, 0.233);
+
+  padding: 18px;
+  width: 170px;
+  height: 40px;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 33px;
+  font-weight: bold;
+}
