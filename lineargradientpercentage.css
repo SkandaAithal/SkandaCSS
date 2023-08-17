@@ -72,7 +72,7 @@ body {
     blue 20px 40px,
     yellow 40px 60px
   );
-  /* here u cant give percentage but you should give the width of each stripe as given above */
+  /* here u cant give percentage but you should give the width of each strip as given above */
 }
 .container9 {
   width: 300px;
@@ -103,4 +103,21 @@ body {
   height: 300px;
   background: repeating-radial-gradient(rgb(255, 166, 0) 0px, white 30px);
   /* if you want to have shade then just give the thickness of the ring as shown above */
+}
+
+/* Problem: use 4 colors in a linear gradient and have a white strip in the middle OR using one div tag create 2 boxes  */
+.container12 {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background-image: linear-gradient(
+    to right,
+    rgb(77, 9, 20),
+    rgb(183, 74, 92) 50%,
+    white 50% 52%,
+    rgb(255, 115, 0) 52%,
+    rgb(255, 213, 0)
+  );
+
+  /* until 50% the gradient of first 2 colors will be present because we havent given any break points in those colors and after that white starts from 50-52% where we get our white strip then the next color starts from 52% then we get a white strip in the middle  */
 }
