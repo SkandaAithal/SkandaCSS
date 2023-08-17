@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background: linear-gradient(0.75turn, red, blue);
+}
+.container1 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: linear-gradient(to bottom right, red, blue);
+}
+.container2 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: linear-gradient(75deg, red, blue);
+}
+.container3 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: conic-gradient(red, blue, green);
+}
+/* percentages in linear gradient */
+
+.container4 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: linear-gradient(red 20%, blue 50%);
+
+  /* it will take 20% of the height red then start gradient and after 50% we will start with only blue */
+}
+.container5 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: linear-gradient(red 30%, blue 30%);
+
+  /* until 30% of height we will have red and at 30% blue will start till the end of the height */
+}
+.container6 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: linear-gradient(
+    to bottom right,
+    red 33.3%,
+    blue 33.3% 66.6%,
+    yellow 66.6%
+  );
+  /* here the red color will be upto 33.3% and blue will start from 33.3% to 66.6% and yellow will start from 66.6% till the end  */
+}
+.container7 {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background: radial-gradient(red 50%, blue 50%);
+}
+.container8 {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background: repeating-linear-gradient(
+    to top right,
+    red 0px 20px,
+    blue 20px 40px,
+    yellow 40px 60px
+  );
+  /* here u cant give percentage but you should give the width of each stripe as given above */
+}
+.container9 {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background: repeating-linear-gradient(
+    to top right,
+    red 0px,
+    blue 30px,
+    yellow 60px
+  );
+  /* if u want gradient effect then u give the points where each color should start */
+}
+
+.container10 {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background: repeating-radial-gradient(
+    red 0px 15px,
+    blue 15px 30px,
+    yellow 30px 45px
+  );
+}
+.container11 {
+  width: 300px;
+  margin: 5px;
+  height: 300px;
+  background: repeating-radial-gradient(rgb(255, 166, 0) 0px, white 30px);
+  /* if you want to have shade then just give the thickness of the ring as shown above */
+}
