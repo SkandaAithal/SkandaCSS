@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-right: 0px;
+  gap: 10px;
+}
+.child {
+  width: calc(33% - 10px);
+  height: 100px;
+  background-color: darkblue;
+  border: 2px solid lightblue;
+}
+@media (min-width: 640px) {
+  .child {
+    width: calc(25% - 10px);
+  }
+}
+
+@media (min-width: 940px) {
+  .child {
+    width: calc(20% - 10px);
+  }
+}
